@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing game</title>
+    <meta name="description" content="Igrica brzog kucanja na tastaturi, takmicite se protiv tri racunara i pobedite.">
+    <meta name="keywords" content="typing, kucanje, brzo pisanje, test, takmicenje, igrica, game">
+    <meta name="author" content="Goran Kekez">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header id="myHeader">
+        <!--Main Navigation-->
+        <nav>
+            <a href="#">
+                <h1>Typing game</h1>
+            </a>
+        </nav>
+        <!--Main Navigation END-->
+    </header>
+    <!-- Main Header END-->
+
+    <main>
+
+        <div class="container-fluid">
+
+            <div class="btn-holder">
+                <div class="col-6">
+                    <button id="startBtn" class="allBtn">Start</button>
+                </div>
+
+                <div class="col-6">
+                    <button id="restartBtn" class="allBtn">Try again</button>
+                </div>
+
+                <div id="info" class="col-6">
+                    <h3>Typing text</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Player -->
+                <div class="col-3">
+                    <!--Section player-->
+                    <section class="card">
+                        <header class="card-header">
+                            <img src="img/player.jpg" alt="Player image" class="allImages">
+                        </header>
+
+                        <article class="card-body">
+                            <textarea id="playerArea" cols="30" rows="5"></textarea>
+                        </article>
+
+                        <footer class="card-footer">
+                            <button id="playerBtn" class="allBtn">Position : 0</button>
+                        </footer>
+                    </section>
+                    <!--Section player END-->
+                </div>
+                <!-- Player END -->
+
+                <!-- Comp 1 -->
+                <div class="col-3">
+                    <!--Section comp1-->
+                    <section class="card">
+                        <header class="card-header">
+                            <img src="img/computer1.jpg" alt="Computer1 image" class="allImages">
+                        </header>
+
+                        <article class="card-body">
+                            <textarea id="comp1Area" cols="30" rows="5"></textarea>
+                        </article>
+
+                        <footer class="card-footer">
+                            <button id="comp1Btn" class="allBtn">Position : 0</button>
+                        </footer>
+                    </section>
+                    <!--Section comp1 END-->
+                </div>
+                <!-- Comp 1 END -->
+
+                <!-- Comp 2 -->
+                <div class="col-3">
+                    <!--Section comp2-->
+                    <section class="card">
+                        <header class="card-header">
+                            <img src="img/computer2.jpg" alt="Computer2 image" class="allImages">
+                        </header>
+
+                        <article class="card-body">
+                            <textarea id="comp2Area" cols="30" rows="5"></textarea>
+                        </article>
+
+                        <footer class="card-footer">
+                            <button id="comp2Btn" class="allBtn">Position : 0</button>
+                        </footer>
+                    </section>
+                    <!--Section comp2 END-->
+                </div>
+                <!-- Comp 2 END -->
+
+                <!-- Comp 3 -->
+                <div class="col-3">
+                    <!--Section comp3-->
+                    <section class="card">
+                        <header class="card-header">
+                            <img src="img/computer3.jpg" alt="Computer3 image" class="allImages">
+                        </header>
+
+                        <article class="card-body">
+                            <textarea id="comp3Area" cols="30" rows="5"></textarea>
+                        </article>
+
+                        <footer class="card-footer">
+                            <button id="comp3Btn" class="allBtn">Position : 0</button>
+                        </footer>
+                    </section>
+                    <!--Section comp3 END-->
+                </div>
+                <!-- Comp 3 END -->
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Main Footer -->
+    <footer id="myFooter">
+        <small>&copy; 2022 Typing game by <a target="_blank" href="https://webdizajn.eu.org">Maxi</a>. Sva prava zadržana.</small>
+    </footer>
+    <!-- Main Footer END-->
+
+    <script src="js/main.js"></script>
+    <noscript>JavaScript not enabled!</noscript>
+</body>
+
+</html>

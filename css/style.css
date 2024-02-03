@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/patterns.png);
+}
+
+a {
+  text-decoration: none;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+#myHeader {
+  background-color: #dfe6e9;
+  padding: 20px;
+}
+
+.btn-holder {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#restartBtn {
+  display: none;
+}
+
+#startBtn,
+#restartBtn {
+  animation: btnAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes btnAnim {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+#info {
+  display: none;
+  text-align: center;
+  background-color: #dfe6e950;
+  padding: 5px;
+}
+
+#info>h3 {
+  font-size: 14px;
+}
+
+.allBtn,
+.danger,
+.success {
+  display: block;
+  width: 100%;
+  margin: 20px 0 10px;
+  padding: 5px;
+  min-height: 35px;
+}
+
+.danger {
+  background-color: red;
+  color: #fff;
+}
+
+.success {
+  background-color: green;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-3 {
+  flex-basis: 300px;
+  margin: 10px 0;
+  animation: boxAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes boxAnim {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 50% 100%;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 100%;
+  }
+}
+
+.card-header {
+  background-color: #dfe6e9;
+  padding: 5px;
+}
+
+.allImages {
+  max-width: 100%;
+}
+
+.card-body {
+  padding: 0 5px;
+  background-color: #dfe6e9;
+}
+
+.card-body>textarea {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-footer {
+  background-color: #dfe6e9;
+  padding: 5px;
+}
+
+#myFooter {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #dfe6e9;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {
+  .btn-holder {
+    width: 90%;
+  }
+
+  #info>h3 {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .btn-holder {
+    width: 80%;
+  }
+
+  #info>h3 {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .btn-holder {
+    width: 70%;
+  }
+
+  #info>h3 {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .btn-holder {
+    width: 60%;
+  }
+
+  #info>h3 {
+    font-size: 20px;
+  }
+
+  #myFooter {
+    position: absolute;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .btn-holder {
+    width: 50%;
+  }
+
+  #info>h3 {
+    font-size: 24px;
+  }
+}
